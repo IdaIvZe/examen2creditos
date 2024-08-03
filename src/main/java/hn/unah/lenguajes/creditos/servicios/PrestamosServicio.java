@@ -19,7 +19,7 @@ public class PrestamosServicio {
 
     public Prestamos crearPrestamo(Prestamos nvoPrestamo, String dni){
         if(this.clienteRepositorio.existsById(dni)){
-            //if(this.prestamosRepositorio.countByPrestamos(nvoPrestamo) < 2){
+            //if(this.prestamosRepositorio.countByPrestamos(dni) < 2){
                 nvoPrestamo.setCliente(this.clienteRepositorio.findById(dni).get());
                 return this.prestamosRepositorio.save(nvoPrestamo);
             //}
