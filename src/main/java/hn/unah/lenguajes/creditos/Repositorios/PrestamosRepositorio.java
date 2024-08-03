@@ -8,5 +8,5 @@ import hn.unah.lenguajes.creditos.modelos.Prestamos;
 @Repository
 public interface PrestamosRepositorio extends JpaRepository<Prestamos, Long> {
 
-    //public Prestamos countByPrestamos(Prestamos prestamos);
+    //public Prestamos countByPrestamos(long dni);
 }
